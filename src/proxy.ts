@@ -15,5 +15,10 @@ export const proxy = async (request: NextRequest) => {
 };
 
 export const config = {
-  matcher: ["/"], // Specify the routes the middleware applies to
+  matcher: [
+    "/books/create-book",
+    "/books/:bookId/book-update",
+    "/profile/:path*",
+    "/user-dashboard/:path*",
+  ], // Specify the routes the middleware applies to
 };

@@ -41,7 +41,7 @@ const Header = async () => {
             Home
           </Link>
           <Link
-            href="/"
+            href="/all-books"
             className="font-medium transition-colors hover:text-teal-500">
             All Books
           </Link>
