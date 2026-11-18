@@ -22,11 +22,13 @@ const page = async ({ params }: BookDetailsProps) => {
 
   return (
     <>
-      <section className="relative h-dvh overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black px-4 pt-24 pb-10">
-        <BookDetails
-          book={book}
-          isOwner={isOwner}
-        />
+      <section className="relative -mt-20 flex-1 overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black pt-28 pb-10">
+        <div className="mx-auto w-full max-w-7xl px-3 sm:px-6">
+          <BookDetails
+            book={book}
+            isOwner={isOwner}
+          />
+        </div>
       </section>
     </>
   );

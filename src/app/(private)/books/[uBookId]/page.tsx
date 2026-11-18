@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 type UpdateBookProps = {
-  params: Promise<{ bookId: string }>;
+  params: Promise<{ uBookId: string }>;
 };
 
 const page = async ({ params }: UpdateBookProps) => {

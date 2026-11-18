@@ -1,4 +1,4 @@
-// components/Books/BookDetails.tsx
+"use client";
 import {
   Card,
   CardContent,
@@ -9,8 +9,8 @@ import { Book } from "@generated/prisma/client";
 import {
   ArrowLeft,
   CalendarDays,
-  DollarSign,
   FileText,
+  IndianRupeeIcon,
   Languages,
   Tags,
   User,
@@ -75,11 +75,6 @@ const BookDetails = ({ book }: BookDetailsProps) => {
             </p>
           </div>
 
-          <div className="flex items-center gap-1 text-3xl font-bold text-lime-400">
-            <DollarSign size={28} />
-            {String(book.price)}
-          </div>
-
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             <div className={infoBox}>
               <div className={iconBox}>
@@ -119,6 +114,13 @@ const BookDetails = ({ book }: BookDetailsProps) => {
               </div>
               <p className={labelClass}>Published</p>
               <p className="mt-0.5 font-medium">{String(book.publishedYear)}</p>
+            </div>
+            <div className={infoBox}>
+              <div className={iconBox}>
+                <IndianRupeeIcon size={18} />
+              </div>
+              <p className={labelClass}>Price</p>
+              <p className="mt-0.5 font-medium">{String(book.price)}</p>
             </div>
           </div>
 

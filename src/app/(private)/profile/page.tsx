@@ -28,7 +28,7 @@ const page = async () => {
 
   return (
     <>
-      <main className="relative h-dvh overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black px-4 pt-24 pb-16">
+      <section className="relative -mt-20 flex-1 overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black px-4 pt-28 pb-16">
         <div className="relative mx-auto max-w-4xl space-y-6">
           {/* Profile card */}
           <section className="overflow-hidden rounded-3xl border border-white/10 bg-linear-to-br from-slate-800/60 via-slate-900/70 to-slate-950/80 shadow-2xl shadow-emerald-500/10 backdrop-blur-xl">
@@ -109,7 +109,7 @@ const page = async () => {
           {/* Quick links */}
           <section className="grid gap-4 sm:grid-cols-2">
             <Link
-              href="/books"
+              href="/"
               className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 transition-all hover:-translate-y-0.5 hover:border-lime-400/40 hover:bg-white/10">
               <div className="flex size-12 items-center justify-center rounded-xl bg-lime-400/15 text-lime-400">
                 <BookOpen />
@@ -137,7 +137,7 @@ const page = async () => {
             </Link>
           </section>
         </div>
-      </main>
+      </section>
     </>
   );
 };

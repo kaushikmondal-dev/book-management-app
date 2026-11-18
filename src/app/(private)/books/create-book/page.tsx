@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 const page = async () => {
   const allBooks = await prisma.book.findMany();
   return (
-    <section className="relative min-h-dvh overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black px-4 pt-24 pb-10">
-      <div className="size-500px] pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 rounded-full bg-emerald-500/20 blur-3xl" />
+    <section className="relative -mt-20 flex-1 overflow-hidden bg-linear-to-b from-slate-900 via-slate-950 to-black px-4 pt-28 pb-10">
+      <div className="size-500px pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 rounded-full bg-emerald-500/20 blur-3xl" />
       <div className="size-400px] pointer-events-none absolute top-1/3 -left-32 rounded-full bg-indigo-600/25 blur-3xl" />
       <div className="size-400px] pointer-events-none absolute -right-32 bottom-0 rounded-full bg-cyan-500/20 blur-3xl" />
       <section className="mt-15 grid h-dvh place-items-center">
-        <Card className="w-full max-w-2xl border-white/10 bg-linear-to-br from-slate-800 via-slate-900 to-slate-950 shadow-xl">
+        <Card className="w-full max-w-2xl border-white/10 bg-linear-to-br from-sky-950 via-slate-900 to-slate-950 shadow-xl">
           <CardHeader className="place-items-center text-center">
             <Image
               src={"/logo.png"}
